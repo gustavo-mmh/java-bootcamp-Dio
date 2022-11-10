@@ -1,4 +1,8 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Mentoria;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,11 +10,18 @@ public class Main {
         curso1.setTitulo("Curso de JAVA");
         curso1.setDescricao("descrição Curso de JAVA");
         curso1.setCargaHoraria(8);
+
         Curso curso2 = new Curso();
         curso2.setTitulo("Curso de JS");
         curso2.setDescricao("descrição Curso de JS");
         curso2.setCargaHoraria(4);
+
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("Mentoria Java");
+        mentoria.setDescricao("descriçao mentoria");
+        mentoria.setData(LocalDate.now());
         System.out.println(curso1);
         System.out.println(curso2);
+        System.out.println(mentoria);
     }
 }
