@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Boorcamp {
+public class Bootcamp {
     private String nome;
     private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
@@ -22,8 +22,8 @@ public class Boorcamp {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Boorcamp boorcamp = (Boorcamp) o;
-        return Objects.equals(nome, boorcamp.nome) && Objects.equals(descricao, boorcamp.descricao) && Objects.equals(dataInicial, boorcamp.dataInicial) && Objects.equals(dataFinal, boorcamp.dataFinal) && Objects.equals(devsInscritos, boorcamp.devsInscritos) && Objects.equals(conteudos, boorcamp.conteudos);
+        Bootcamp bootcamp = (Bootcamp) o;
+        return Objects.equals(nome, bootcamp.nome) && Objects.equals(descricao, bootcamp.descricao) && Objects.equals(dataInicial, bootcamp.dataInicial) && Objects.equals(dataFinal, bootcamp.dataFinal) && Objects.equals(devsInscritos, bootcamp.devsInscritos) && Objects.equals(conteudos, bootcamp.conteudos);
     }
 
     @Override
